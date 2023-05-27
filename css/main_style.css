@@ -22,10 +22,20 @@
 
 .darkmode-c input[type="checkbox"] + button{
     display: block;
-    color: #333;
-    border: 2px solid #333;
     border-radius: 0.5rem;
     padding: 0.5rem;
     width: 3cm;
     height: 1cm;
+}
+
+.light-theme .darkmode-c input[type="checkbox"] + button{
+    color: #efefef;
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.dark-theme .darkmode-c input[type="checkbox"] + button{
+    color: #333;
+    background-color: #efefef;
+    border: 1px solid #efefef;
 }
