@@ -10,12 +10,19 @@
     <body>
         <header>
             <h2>main</h2>
-            <div class="darkmode-c">
-                <input id="checkbox-darkmode" type="checkbox"><button id="button-darkmode"></button>
+
+            <div class="darkmode_toggle">
+                <input type="radio" name="d_togglesw" id="on" value="1" checked=""/>
+                <label for="on" class="switch_light">Light Mode</label>
+                <input type="radio" name="d_togglesw" id="off" value="0"/>
+                <label for="off" class="switch_dark">Dark Mode</label>
+                
+                <span class="slider"></span>
             </div>
+
         </header>
     </body>
 
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 
 </html>

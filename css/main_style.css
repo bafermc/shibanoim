@@ -1,41 +1,39 @@
-.light-theme {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+.light-theme{
     background: #efefef;
     color: #333;
 }
-.dark-theme {
+
+.dark-theme{
     background: #333;
     color: #efefef;
 }
 
-.darkmode-c {
-    position: relative;
-    display: block;
+.darkmode_toggle input{
+    display: none;
 }
 
-.darkmode-c input[type="checkbox"]{
-    position: absolute;
-    opacity: 0;
-    width: 3cm;
-    height: 1cm;
-    vertical-align: middle;
+.darkmode_toggle label{
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 60px;
+	margin: 0;
+	padding: 10px;
+	background: #bdc3c7;
+	color: #869198;
+	font-size: 16px;
+	text-align: center;
+	line-height: 1;
+	transition: .2s;
+    .darkmode{
+        background: #333;
+    }
 }
-
-.darkmode-c input[type="checkbox"] + button{
-    display: block;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    width: 3cm;
-    height: 1cm;
+.darkmode_toggle label:first-of-type{
+	border-radius: 7px 0 0 7px;
 }
-
-.light-theme .darkmode-c input[type="checkbox"] + button{
-    color: #efefef;
-    background-color: #333;
-    border: 1px solid #333;
-}
-
-.dark-theme .darkmode-c input[type="checkbox"] + button{
-    color: #333;
-    background-color: #efefef;
-    border: 1px solid #efefef;
+.darkmode_toggle label:last-of-type{
+	border-radius: 0 7px 7px 0;
 }
