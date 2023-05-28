@@ -37,14 +37,22 @@ header img{
 	float: left;
 	cursor: pointer;
 	width: 60px;
-	margin: 0;
-	padding: 10px;
 	font-size: 16px;
 	text-align: center;
-	line-height: 1;
 	transition: .2s;
-	background: #dfdfdf;
+	background: #aaa;
 	color: #333;
+}
+
+.darkmode_toggle .switch_light{
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.darkmode_toggle .switch_dark{
+	padding-right: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 
 .darkmode_toggle label:first-of-type{
@@ -52,4 +60,40 @@ header img{
 }
 .darkmode_toggle label:last-of-type{
 	border-radius: 0 7px 7px 0;
+}
+
+.darkmode_toggle span{
+	display: block;
+	padding:5px;
+	transition: .2s;
+}
+
+.darkmode_toggle #lightsw{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #efefef;
+	color:#aaa;
+	transition: .2s;
+}
+
+.darkmode_toggle #darksw{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #444;
+	color:#aaa;
+	transition: .2s;
+}
+
+.darkmode_toggle span:hover{
+	opacity: 75%;
+}
+
+.darkmode_toggle #lightsw[class="1d"]{
+	background-color: #aaa;
+	color:#333;
+}
+
+.darkmode_toggle #darksw[class="1l"]{
+	background-color: #aaa;
+	color:#efefef;
 }
