@@ -3,19 +3,33 @@
 .light-theme{
     background: #efefef;
     color: #333;
+	transition: .2s;
 }
 
 .dark-theme{
     background: #333;
     color: #efefef;
+	transition: .2s;
+}
+
+body{
+	font-family: "Inter", sans-serif;
+	width: 720px;
+	margin: auto;
+}
+
+.light_theme{}
+
+header img{
+	width:20%;
+}
+
+.head_menu{
+	padding-top:2cm;
 }
 
 .darkmode_toggle input{
     display: none;
-}
-
-.darkmode_toggle{
-    background: #bdc3c7;
 }
 
 .darkmode_toggle label{
@@ -25,24 +39,17 @@
 	width: 60px;
 	margin: 0;
 	padding: 10px;
-    margin: 5px;
-	background: #bdc3c7;
-	color: #869198;
 	font-size: 16px;
 	text-align: center;
 	line-height: 1;
 	transition: .2s;
-}
-.darkmode_toggle label:first-of-type{
-	border-radius: 7px 7px 7px 7px;
-}
-.darkmode_toggle label:last-of-type{
-	border-radius: 7px 7px 7px 7px;
+	background: #dfdfdf;
+	color: #333;
 }
 
-.darkmode_toggle input[type="radio"]:checked + .switch_light {
-	background-color: #efefef;
+.darkmode_toggle label:first-of-type{
+	border-radius: 7px 0 0 7px;
 }
-.darkmode_toggle input[type="radio"]:checked + .switch_dark {
-	background-color: #333;
+.darkmode_toggle label:last-of-type{
+	border-radius: 0 7px 7px 0;
 }
